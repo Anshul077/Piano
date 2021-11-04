@@ -1,11 +1,11 @@
-let noteElement = new Audio("notes/1.mp3");
+let noteElement = new Audio("1.mp3");
 
 function getId(e) {
   let noteId = e.id;
   master = document.getElementById(`${noteId}`);
 
   master.addEventListener("click", () => {
-    noteElement.src = `notes/${noteId}.mp3`;
+    noteElement.src = `${noteId}.mp3`;
     console.log(noteElement.src);
 
     var playPromise = noteElement.play();
